@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	grid := [][]int{{1, 1, 0, 1, 1}, {1, 0, 0, 0, 0}, {0, 0, 0, 0, 1}, {1, 1, 0, 1, 1}}
-	fmt.Println(maxAreaOfIsland(grid))
+	maze := [][]byte{{'+', '+', '.', '+'}, {'.', '.', '.', '+'}, {'+', '+', '+', '.'}}
+	entrance := []int{1, 2}
+	fmt.Println(maze[1][2] == '.')
+	fmt.Println(nearestExit(maze, entrance))
 
 }
