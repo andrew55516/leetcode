@@ -2,10 +2,9 @@ package main
 
 import "fmt"
 
-func main() {
-	maze := [][]byte{{'+', '+', '.', '+'}, {'.', '.', '.', '+'}, {'+', '+', '+', '.'}}
-	entrance := []int{1, 2}
-	fmt.Println(maze[1][2] == '.')
-	fmt.Println(nearestExit(maze, entrance))
+type test []int
 
+func main() {
+	a := []int{1, 3, -1, -3, 5, 3, 6, 7}
+	fmt.Println(medianSlidingWindow(a, 3))
 }
